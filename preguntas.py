@@ -57,6 +57,7 @@ La información contenida en la muestra es la siguiente:
 """
 
 from array import array
+from re import A
 import pandas as pd
 
 
@@ -75,14 +76,13 @@ def pregunta_01():
     y = df["type"].values
 
     # Asigne una copia del dataframe `df` a la variable `X`.
-    X = df.copy()
+    X = df.copy(A)
 
     # Remueva la columna `type` del DataFrame `X`.
     X.drop("type", inplace=True, axis=1)
 
     # Retorne `X` y `y`
     return X, y
-
 
 def pregunta_02():
     """
@@ -106,7 +106,6 @@ def pregunta_02():
 
     # Retorne `X_train`, `X_test`, `y_train` y `y_test`
     return X_train, X_test, y_train, y_test
-
 
 def pregunta_03():
     """
@@ -146,7 +145,6 @@ def pregunta_03():
 
     # Retorne el pipeline entrenado
     return pipeline
-
 
 def pregunta_04():
     """
