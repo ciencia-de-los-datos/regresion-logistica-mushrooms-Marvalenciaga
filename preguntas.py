@@ -67,7 +67,7 @@ def pregunta_01():
     """
     # Lea el archivo `mushrooms.csv` y asignelo al DataFrame `df`
     df = pd.read_csv("mushrooms.csv", sep=",", header=0 )
-    
+
     # Remueva la columna `veil-type` del DataFrame `df`.
     # Esta columna tiene un valor constante y no sirve para la detección de hongos.
     df.pop("veil_type")
@@ -90,7 +90,7 @@ def pregunta_02():
     """
 
     # Importe train_test_split
-    from sklearn.model.selection import train_test_split
+    from sklearn.model_selection import train_test_split
 
     # Cargue los datos de ejemplo y asigne los resultados a `X` y `y`.
     X, y = pregunta_01()
