@@ -55,11 +55,7 @@ La información contenida en la muestra es la siguiente:
 
 
 """
-
-from array import array
-from re import A
 import pandas as pd
-
 
 def pregunta_01():
     """
