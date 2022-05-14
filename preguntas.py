@@ -123,7 +123,6 @@ def pregunta_03():
     from sklearn.preprocessing import OneHotEncoder
     from sklearn.pipeline import Pipeline
     
-
     # Cargue las variables.
     X_train, X_test, y_train, y_test = pregunta_02()
 
@@ -146,7 +145,6 @@ def pregunta_04():
     """
     Evalue el modelo obtenido.
     """
-
     # Importe confusion_matrix
     from sklearn.metrics import confusion_matrix
 
@@ -166,6 +164,5 @@ def pregunta_04():
         y_true=y_test,
         y_pred=pipeline.predict(X_test),
     )
-
     # Retorne la matriz de confusion de entrenamiento y prueba
     return cfm_train, cfm_test
